@@ -7,11 +7,12 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+
 import Link from "next/link";
 
 const SocialMedia = () => {
   return (
-    <ul className="flex items-center gap-2 bg-blue-500/0 justify-end max-lg:justify-center py-2 px-2">
+    <ul className="flex items-center gap-2 bg-blue-500/0 justify-end max-lg:justify-center py-4">
       {SOCIAL_MEDIA.map((link) => {
         return (
           <li
@@ -22,7 +23,7 @@ const SocialMedia = () => {
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                  className=""
+                    className=""
                     download={link.download}
                     href={link.path}
                     target="_blank"

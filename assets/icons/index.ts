@@ -20,3 +20,5 @@ export { default as MySQLLogo } from "./MySQLLogo";
 export { default as TrendEaseLogo } from "./TrendEaseLogo";
 export { default as TanimLogo } from "./TanimLogo";
 export { default as MediaMeterLogo } from "./MediaMeterLogo";
+export { default as HomeIcon } from "./HomeIcon";
+export { default as UserIcon } from "./UserIcon";

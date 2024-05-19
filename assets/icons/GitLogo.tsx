@@ -6,8 +6,8 @@ type GitLogoProps = {
 const GitLogo = ({ className }: GitLogoProps) => {
   return (
     <svg
+    className={cn("aspect-square w-[1rem]", className)}
       xmlns="http://www.w3.org/2000/svg"
-      className={cn("aspect-square w-[1rem]", className)}
       viewBox="0 0 24 24"
     >
       <path

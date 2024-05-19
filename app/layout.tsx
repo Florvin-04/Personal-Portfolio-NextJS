@@ -22,11 +22,16 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "h-screen flex flex-col dark theme-green max-w-[2100px] mx-auto"
+          "h-screen flex flex-col w-full dark theme-green max-w-[2100px] mx-auto"
         )}
       >
-        <SocialMedia />
+        <div className="w-[90%]">
+          <SocialMedia />
+        </div>
         {children}
+        <div className="lg:absolute lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2">
+          <Navbar />
+        </div>
       </body>
     </html>
   );
