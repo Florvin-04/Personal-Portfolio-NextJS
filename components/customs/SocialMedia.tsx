@@ -16,14 +16,14 @@ const SocialMedia = () => {
       {SOCIAL_MEDIA.map((link) => {
         return (
           <li
-            className="hover:text-primary flex"
+            className="hover:text-primary flex text-white"
             key={`Header-Socials-Nav-${link.label}`}
           >
             <TooltipProvider delayDuration={100}>
               <Tooltip>
                 <TooltipTrigger>
                   <Link
-                    className=""
+                    className="w-[2rem] inline-block"
                     download={link.download}
                     href={link.path}
                     target="_blank"

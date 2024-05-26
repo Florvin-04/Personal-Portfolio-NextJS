@@ -22,10 +22,12 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "h-screen flex flex-col w-full dark theme-green max-w-[2100px] mx-auto"
+          "h-screen relative flex flex-col w-full dark theme-green max-w-[2100px] mx-auto"
         )}
       >
-        <div className="w-[90%]">
+        {/* <MousepointerBG /> */}
+
+        <div className="w-[90%] bg-red-500/0 mx-auto">
           <SocialMedia />
         </div>
         {children}
