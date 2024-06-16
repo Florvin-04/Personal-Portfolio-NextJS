@@ -8,7 +8,7 @@ export const MAIN_NAV_LINKS = [
     icon: <HomeIcon className="w-full" />,
   },
   {
-    path: `${MAIN_ROUTES.ABOUT}`,
+    path: `${MAIN_ROUTES.ABOUT}/${MAIN_ROUTES.SKILLS}`,
     label: "About Me",
     icon: <UserIcon className="w-full" />,
   },

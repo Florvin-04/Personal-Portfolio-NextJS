@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "h-screen relative flex flex-col w-full dark theme-green max-w-[2100px] mx-auto"
+          "min-h-[100svh] relative flex flex-col w-full dark theme-green max-w-[2100px] mx-auto"
         )}
       >
         {/* <MousepointerBG /> */}
@@ -30,7 +30,8 @@ export default function RootLayout({
         <div className="w-[90%] bg-red-500/0 mx-auto">
           <SocialMedia />
         </div>
-        {children}
+        {/* {children} */}
+        <div className="h-full">{children}</div>
         <div className="lg:absolute lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2">
           <Navbar />
         </div>
