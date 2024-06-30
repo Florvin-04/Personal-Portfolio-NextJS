@@ -8,7 +8,7 @@ export default function AboutLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-red-500/0 h-full">
+    <div className="bg-red-500/0 lg:h-[70svh] px-10 lg:grid lg:grid-cols-2 lg:pr-[5rem] lg:place-content-center lg:gap-[1rem]">
       <div className="text-center">
         <h1
           className="font-bold"
@@ -28,8 +28,10 @@ export default function AboutLayout({
         </div>
       </div>
 
-      <NavigationLink />
-      <div className="">{children}</div>
+      <div className="mt-10 lg:mt-5 lg:justify">
+        <NavigationLink />
+        <div className="mt-5">{children}</div>
+      </div>
     </div>
   );
 }

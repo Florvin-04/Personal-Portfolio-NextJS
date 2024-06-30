@@ -20,18 +20,15 @@ export const ABOUT_LANG = {
   NAVIGATION: [
     {
       label: "Skills",
-      path: `${MAIN_ROUTES.SKILLS}`,
-      currentPath: `/${MAIN_ROUTES.ABOUT}/${MAIN_ROUTES.SKILLS}`,
+      path: `${MAIN_ROUTES.ABOUT.SKILLS.path}`,
     },
     {
       label: "Experiences",
-      path: `${MAIN_ROUTES.EXPERIENCE}`,
-      currentPath: `/${MAIN_ROUTES.ABOUT}/${MAIN_ROUTES.EXPERIENCE}`,
+      path: `${MAIN_ROUTES.ABOUT.EXPERIENCE.path}`,
     },
     {
       label: "Projects",
-      path: `${MAIN_ROUTES.PROJECT}`,
-      currentPath: `/${MAIN_ROUTES.ABOUT}/${MAIN_ROUTES.PROJECT}`,
+      path: `${MAIN_ROUTES.ABOUT.PROJECT.path}`,
     },
   ],
 };

@@ -15,8 +15,8 @@ const NavigationLink = () => {
         return (
           <li
             className={cn(
-              "font-medium",
-              pathname === navigation.currentPath &&
+              "font-medium text-[1.1rem]",
+              pathname.includes(`/${navigation.path}`) &&
                 "text-primary z-100 after:content-[''] pointer-events-none relative bottom-0 after:absolute after:bottom-[0] after:left-[0] after:h-[.2rem] after:w-full after:rounded-full after:bg-primary"
             )}
             key={`about-page-navigation-key-${navigation.label}`}

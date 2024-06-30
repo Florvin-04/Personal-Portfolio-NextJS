@@ -31,8 +31,8 @@ export default function RootLayout({
           <SocialMedia />
         </div>
         {/* {children} */}
-        <div className="h-full">{children}</div>
-        <div className="lg:absolute lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2">
+        <div className="h-full mt-5">{children}</div>
+        <div className="lg:absolute lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2 mt-auto">
           <Navbar />
         </div>
       </body>

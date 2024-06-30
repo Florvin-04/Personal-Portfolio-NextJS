@@ -1,11 +1,11 @@
 import { GitHubLogo, LinklnLogo, ResumeLogo } from "@/assets/icons";
 
-const ResumeLink = "./Bayaborda-florvin (Resume).pdf";
+const ResumeLink = `/Bayaborda-florvin (Resume).pdf`;
 
 export const RESUME = {
   path: ResumeLink,
   icon: <ResumeLogo className="w-[2.4rem]" />,
-  hoverContent: "Download My Resume",
+  label: "Download My Resume",
   download: true,
 };
 

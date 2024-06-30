@@ -1,10 +1,23 @@
 export const MAIN_ROUTES = {
-  HOME: "/",
-  ABOUT: "about",
-  SKILLS: "skills",
-  EXPERIENCE: "experiences",
-  PROJECT: "projects",
-  TRIPPINGS: "trippings",
-  PRACTICE: "practice",
-  FOLDER: "folder",
+  HOME: {
+    path: "/",
+  },
+
+  ABOUT: {
+    path: "/about",
+
+    SKILLS: {
+      path: "skills",
+    },
+    EXPERIENCE: {
+      path: "experiences",
+    },
+    PROJECT: {
+      path: "projects",
+    },
+  },
+
+  // TRIPPINGS: "/trippings",
+  // PRACTICE: "/practice",
+  // FOLDER: "/folder",
 };
