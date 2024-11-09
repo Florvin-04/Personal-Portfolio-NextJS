@@ -3,6 +3,10 @@ export const MAIN_ROUTES = {
     path: "/",
   },
 
+  BACKGROUND: {
+    path: "/background",
+  },
+
   ABOUT: {
     path: "/about",
 

@@ -3,7 +3,7 @@ import { MAIN_ROUTES } from "@/app/routings/routes";
 export const ABOUT_LANG = {
   heading: (
     <p className="">
-      <span className="text-primary text-nowrap">Empowering Businesses</span>{" "}
+      <span className="text-primary ">Empowering Businesses</span>{" "}
       with Cutting-Edge Solutions
     </p>
   ),

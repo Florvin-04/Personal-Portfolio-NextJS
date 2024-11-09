@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const SocialMedia = () => {
   return (
-    <ul className="flex items-center gap-2 bg-blue-500/0 justify-end max-lg:justify-center py-4">
+    <ul className="flex items-center gap-2 justify-end max-lg:justify-center py-3">
       {SOCIAL_MEDIA.map((link) => {
         return (
           <li

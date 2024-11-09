@@ -22,17 +22,21 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "min-h-[100svh] relative flex flex-col w-full dark theme-green max-w-[2100px] mx-auto"
+          "h-[100svh] relative flex flex-col w-full dark theme-green max-w-[2100px] mx-auto overflow-hidden"
         )}
       >
         {/* <MousepointerBG /> */}
 
-        <div className="w-[90%] bg-red-500/0 mx-auto">
-          <SocialMedia />
+        <div id="main-navigaionbar" className="top-0 bg-background sticky z-10">
+          <div className="flex items-center justify-between w-[90%] mx-auto">
+            <div className="text-[1.5rem] font-bold">Logo</div>
+            <SocialMedia />
+          </div>
         </div>
         {/* {children} */}
-        <div className="h-full mt-5">{children}</div>
-        <div className="lg:absolute lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2 mt-auto">
+        <div className="overflow-auto flex-1 flex flex-col">{children}</div>
+
+        <div className="sticky max-lg:bottom-0 max-lg:bg-background lg:fixed lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2 mt-auto">
           <Navbar />
         </div>
       </body>

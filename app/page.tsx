@@ -1,12 +1,13 @@
 import Avatar from "@/assets/Avatar.png";
+import Skills from "@/components/customs/skills/Skills";
 import { Button } from "@/components/ui/button";
 import { HOME_LANG } from "@/lib/lang/Home";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-red-500/0 h-full">
-      <div className="h-full flex flex-col lg:flex-row bg-red-500/0 lg:justify-between">
+    <div className="flex-1 flex flex-col">
+      <div className="h-full flex-grow flex flex-col lg:flex-row bg-red-500/0 lg:justify-between lg:px-[2rem]">
         <div className="lg:ml-[5rem] bg-red-500/0 my-auto lg:w-[50%]">
           <div className="text-center lg:text-left">
             <h1
@@ -50,9 +51,6 @@ export default function Home() {
           <Image className="mt-auto" src={Avatar} alt="profile avatar" />
         </div>
       </div>
-      {/* <div className="absolute -right-[10rem] bottom-0 hidden aspect-square w-[min(35rem,_75%)] bg-red-500/0 lg:block">
-        <Image className="" src={Avatar} alt="profile avatar" />
-      </div> */}
-    </main>
+    </div>
   );
 }

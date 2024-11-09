@@ -1,24 +1,59 @@
-export { default as GitHubLogo } from "./GitHubLogo";
-export { default as TwitterLogo } from "./TwitterLogo";
-export { default as LinklnLogo } from "./Linkln";
-export { default as ResumeLogo } from "./ResumeLogo";
-export { default as ReactLogo } from "./ReactLogo";
-export { default as TypescriptLogo } from "./TypescriptLogo";
-export { default as JavascriptLogo } from "./JavascriptLogo";
-export { default as NodeJSLogo } from "./NodeJSLogo";
-export { default as HTMLLogo } from "./HTMLLogo";
-export { default as TailwindCSSLogo } from "./TailwindCSSLogo";
-export { default as CSSLogo } from "./CSSLogo";
-export { default as ShadCnLogo } from "./ShadCnLogo";
-export { default as GitLogo } from "./GitLogo";
-export { default as BitBucketLogo } from "./BitBucketLogo";
-export { default as JiraLogo } from "./JiraLogo";
-export { default as ExpressJSLogo } from "./ExpressJSLogo";
-export { default as PostmanLogo } from "./PostmanLogo";
-export { default as MonggoDBLogo } from "./MonggoDBLogo";
-export { default as MySQLLogo } from "./MySQLLogo";
-export { default as TrendEaseLogo } from "./TrendEaseLogo";
-export { default as TanimLogo } from "./TanimLogo";
-export { default as MediaMeterLogo } from "./MediaMeterLogo";
-export { default as HomeIcon } from "./HomeIcon";
-export { default as UserIcon } from "./UserIcon";
+import GitHubLogo from "./GitHubLogo";
+import TwitterLogo from "./TwitterLogo";
+import LinklnLogo from "./Linkln";
+import ResumeLogo from "./ResumeLogo";
+import ReactLogo from "./ReactLogo";
+import TypescriptLogo from "./TypescriptLogo";
+import JavascriptLogo from "./JavascriptLogo";
+import NodeJSLogo from "./NodeJSLogo";
+import HTMLLogo from "./HTMLLogo";
+import TailwindCSSLogo from "./TailwindCSSLogo";
+import CSSLogo from "./CSSLogo";
+import ShadCnLogo from "./ShadCnLogo";
+import GitLogo from "./GitLogo";
+import BitBucketLogo from "./BitBucketLogo";
+import JiraLogo from "./JiraLogo";
+import ExpressJSLogo from "./ExpressJSLogo";
+import PostmanLogo from "./PostmanLogo";
+import MonggoDBLogo from "./MonggoDBLogo";
+import MySQLLogo from "./MySQLLogo";
+import TrendEaseLogo from "./TrendEaseLogo";
+import TanimLogo from "./TanimLogo";
+import MediaMeterLogo from "./MediaMeterLogo";
+import HomeIcon from "./HomeIcon";
+import UserIcon from "./UserIcon";
+import Prisma from "./Prisma";
+import Nextjs from "./Nextjs";
+import Sass from "./Sass";
+
+const Icons = {
+  GitHubLogo,
+  TwitterLogo,
+  LinklnLogo,
+  ResumeLogo,
+  ReactLogo,
+  TypescriptLogo,
+  JavascriptLogo,
+  NodeJSLogo,
+  HTMLLogo,
+  TailwindCSSLogo,
+  CSSLogo,
+  ShadCnLogo,
+  GitLogo,
+  BitBucketLogo,
+  JiraLogo,
+  ExpressJSLogo,
+  PostmanLogo,
+  MonggoDBLogo,
+  MySQLLogo,
+  TrendEaseLogo,
+  TanimLogo,
+  MediaMeterLogo,
+  HomeIcon,
+  UserIcon,
+  Prisma,
+  Nextjs,
+  SASS: Sass,
+};
+
+export default Icons;
