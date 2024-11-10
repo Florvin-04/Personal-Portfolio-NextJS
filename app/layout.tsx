@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import NextTopLoader from "nextjs-toploader";
 import Link from "next/link";
 import { Toaster } from "@/components/ui/sonner";
+import Copyright from "@/components/customs/Copyright";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,6 +47,7 @@ export default function RootLayout({
           <NextTopLoader color="#16a34a" showSpinner={false} />
           <Toaster />
           {children}
+          <Copyright parentClassName="absolute bottom-0 w-full" />  
         </div>
 
         <div className="sticky max-lg:bottom-0 max-lg:bg-background lg:fixed lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2 mt-auto">

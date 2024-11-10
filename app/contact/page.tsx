@@ -6,13 +6,6 @@ import SendEmailForm from "./_component/SendEmailForm";
 export default function Contact() {
   return (
     <div className="flex-1 flex flex-col relative pr-[5rem]">
-      {/* <div className="flex-1 grid grid-cols-[30rem_1fr] lg:-translate-x-[21%] bg-blue-500">
-        <div className="hidden aspect-square lg:flex w-full lg:flex-1 lg:h-full  bg-red-500">
-          <Image className="mt-auto" src={Avatar} alt="profile avatar" />
-        </div>
-        <div>asd</div>
-      </div> */}
-
       <div className="pl-[18rem] pt-[2rem] space-y-4">
         <div>
           <p className="text-[2.5rem] font-bold text-primary">
@@ -24,10 +17,10 @@ export default function Contact() {
           <div className="">
             <div className="flex items-center gap-2">
               <p className="text-[1.5rem] font-semibold ">Email</p>
-              <CopyButton textToCopy="Bayaborda.f@gmail.com" />
+              <CopyButton textToCopy="bayaborda.f@gmail.com" />
             </div>
             <p className="text-[1.2rem] text-muted-foreground">
-              Bayaborda.f@gmail.com
+              bayaborda.f@gmail.com
             </p>
           </div>
           <div className="">

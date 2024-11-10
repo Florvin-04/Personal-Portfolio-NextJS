@@ -19,7 +19,7 @@ const renderJSX = [
 
 export default function BackgroundPage() {
   return (
-    <div className="flex-1 pb-[1rem]">
+    <div className="flex-1 pb-[2rem]">
       <div className="space-y-[2rem]">
         {renderJSX.map((item) => {
           return (

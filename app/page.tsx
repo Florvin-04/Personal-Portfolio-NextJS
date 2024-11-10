@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col relative">
       <div className="h-full flex-grow flex flex-col lg:flex-row bg-red-500/0 lg:justify-between lg:px-[2rem]">
         <div className="lg:ml-[5rem] bg-red-500/0 my-auto lg:w-[50%]">
           <div className="text-center lg:text-left">
@@ -34,7 +34,7 @@ export default function Home() {
           <div className="mt-8">
             <Button
               asChild
-              className="mx-auto flex justify-center font-bold lg:mx-0 w-fit capitalize" 
+              className="mx-auto flex justify-center font-bold lg:mx-0 w-fit capitalize"
             >
               <Link href="/background">Visit my background</Link>
             </Button>
