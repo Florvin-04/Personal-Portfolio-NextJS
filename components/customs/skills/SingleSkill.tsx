@@ -7,7 +7,7 @@ type Props = {
 
 const SingleSkill = ({ skillName, icon }: Props) => {
   return (
-    <div className="duration-[1s] group grid grid-rows-[1fr_1.5rem] gap-2 cursor-pointer transition-all hover:scale-[1.1]">
+    <div className="duration-100 group grid grid-rows-[1fr_1.5rem] gap-2 cursor-pointer transition-all hover:scale-[1.1]">
       <div className="w-[2.5rem] lg:w-[3.5rem] justify-self-center self-center">
         {icon}
       </div>

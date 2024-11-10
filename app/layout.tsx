@@ -27,9 +27,11 @@ export default function RootLayout({
       >
         {/* <MousepointerBG /> */}
 
+
+
         <div id="main-navigaionbar" className="top-0 bg-background sticky z-10">
           <div className="flex items-center justify-between w-[90%] mx-auto">
-            <div className="text-[1.5rem] font-bold">Logo</div>
+            <div className="text-[1.8rem] text-primary/85 font-bold uppercase tracking-[.2rem]">Florvin</div>
             <SocialMedia />
           </div>
         </div>

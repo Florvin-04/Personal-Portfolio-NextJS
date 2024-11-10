@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/tooltip";
 
 import Link from "next/link";
+import TooltipWrapper from "./wrapper/TooltipWrapper";
 
 const SocialMedia = () => {
   return (
@@ -19,23 +20,16 @@ const SocialMedia = () => {
             className="hover:text-primary flex text-white"
             key={`Header-Socials-Nav-${link.label}`}
           >
-            <TooltipProvider delayDuration={100}>
-              <Tooltip>
-                <TooltipTrigger>
-                  <Link
-                    className="w-[2rem] inline-block"
-                    download={link.download}
-                    href={link.path}
-                    target="_blank"
-                  >
-                    {link.icon}
-                  </Link>
-                </TooltipTrigger>
-                <TooltipContent side="bottom" className="bg-popover">
-                  <p>{link.label}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+            <TooltipWrapper content={link.label} durationPopup={100}>
+              <Link
+                className="w-[2rem] inline-block"
+                download={link.download}
+                href={link.path}
+                target="_blank"
+              >
+                {link.icon}
+              </Link>
+            </TooltipWrapper>
           </li>
         );
       })}
