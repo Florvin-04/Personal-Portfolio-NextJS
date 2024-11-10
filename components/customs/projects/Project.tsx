@@ -73,7 +73,7 @@ export default function Project({
           src={image}
           width={1000}
           height={1000}
-          alt="project"
+          alt={`${title} project image`}
           quality={100}
         />
       </div>
