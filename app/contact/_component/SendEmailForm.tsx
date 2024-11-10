@@ -58,12 +58,14 @@ export default function SendEmailForm() {
           name="email"
           placeholder="Your Email Address (johndoe@example.com)"
           required
+          maxLength={500}
         />
         <Input
           type="text"
           name="name"
           placeholder="Your Name (John Doe)"
           required
+          maxLength={500}
         />
       </div>
 
@@ -71,6 +73,7 @@ export default function SendEmailForm() {
         required
         name="message"
         placeholder="Write your message here..."
+        maxLength={5000}
       />
 
       <Button disabled={isPending || isEmailSent}>

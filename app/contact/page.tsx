@@ -6,7 +6,7 @@ import SendEmailForm from "./_component/SendEmailForm";
 export default function Contact() {
   return (
     <div className="flex-1 flex flex-col relative pr-[5rem]">
-      <div className="pl-[18rem] pt-[2rem] space-y-4">
+      <div className="pl-[5rem] lg:pl-[18rem] pt-[2rem] space-y-4">
         <div>
           <p className="text-[2.5rem] font-bold text-primary">
             Contact Information

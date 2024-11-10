@@ -18,7 +18,7 @@ export default function TooltipWrapper({
   content,
   durationPopup = 100,
   directionPopup = "bottom",
-  sideOffsetPopup = 20,
+  sideOffsetPopup,
 }: Props) {
   return (
     <TooltipProvider delayDuration={durationPopup}>

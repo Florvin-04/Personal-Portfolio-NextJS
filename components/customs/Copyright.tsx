@@ -7,7 +7,7 @@ type Props = {
 
 export default function Copyright({ parentClassName, textClassName }: Props) {
   return (
-    <div className={cn("", parentClassName)}>
+    <div className={cn("pointer-events-none", parentClassName)}>
       <p
         className={cn(
           "text-center text-sm text-muted-foreground/40",

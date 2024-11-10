@@ -47,7 +47,7 @@ export default function RootLayout({
           <NextTopLoader color="#16a34a" showSpinner={false} />
           <Toaster />
           {children}
-          <Copyright parentClassName="absolute bottom-0 w-full" />  
+          <Copyright parentClassName="absolute bottom-[3.5rem] w-full lg:bottom-1" />  
         </div>
 
         <div className="sticky max-lg:bottom-0 max-lg:bg-background lg:fixed lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2 mt-auto">
