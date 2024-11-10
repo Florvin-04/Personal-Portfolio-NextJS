@@ -37,8 +37,7 @@ export default function SendEmailForm() {
             });
             formRef.current?.reset();
             // Set a cookie indicating successful email submission, expires in 5 hours
-            document.cookie = `emailSent=true; path=/; max-age=18000`; // 5 hours (18000 seconds)
-
+            // 5 hours (18000 seconds)
             document.cookie = `emailSent=true; path=/; max-age=18000; ${
               NODE_ENV === "production"
                 ? "SameSite=None; Secure"
