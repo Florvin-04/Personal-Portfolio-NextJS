@@ -4,16 +4,16 @@ import Skills from "@/components/customs/skills/Skills";
 
 const renderJSX = [
   {
+    title: "Professional Experience",
+    component: <ExperiencePage />,
+  },
+  {
     title: "Skills",
     component: <Skills />,
   },
   {
     title: "Projects",
     component: <Projects />,
-  },
-  {
-    title: "Professional Experience",
-    component: <ExperiencePage />,
   },
 ];
 
