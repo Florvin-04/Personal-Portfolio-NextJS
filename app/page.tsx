@@ -1,8 +1,8 @@
 import Avatar from "@/assets/Avatar.png";
-import Skills from "@/components/customs/skills/Skills";
 import { Button } from "@/components/ui/button";
 import { HOME_LANG } from "@/lib/lang/Home";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,16 +33,10 @@ export default function Home() {
           </div>
           <div className="mt-8">
             <Button
-              // onClick={() => {
-              //   setModalConfig({
-              //     isOpenModal: true,
-              //     modalClassName: "h-[90%]",
-              //     modalChildren: <div className="h-full bg-red-500">asd</div>,
-              //   });
-              // }}
-              className="mx-auto flex justify-center font-bold lg:mx-0"
+              asChild
+              className="mx-auto flex justify-center font-bold lg:mx-0 w-fit capitalize" 
             >
-              {HOME_LANG.primaryButton}
+              <Link href="/background">Visit my background</Link>
             </Button>
           </div>
         </div>

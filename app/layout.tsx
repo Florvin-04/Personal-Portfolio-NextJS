@@ -4,6 +4,9 @@ import "./globals.css";
 import Navbar from "@/components/customs/Navbar";
 import SocialMedia from "@/components/customs/SocialMedia";
 import { cn } from "@/lib/utils";
+import NextTopLoader from "nextjs-toploader";
+import Link from "next/link";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,16 +30,23 @@ export default function RootLayout({
       >
         {/* <MousepointerBG /> */}
 
-
-
         <div id="main-navigaionbar" className="top-0 bg-background sticky z-10">
           <div className="flex items-center justify-between w-[90%] mx-auto">
-            <div className="text-[1.8rem] text-primary/85 font-bold uppercase tracking-[.2rem]">Florvin</div>
+            <Link
+              href="/"
+              className="text-[1.8rem] text-primary/85 font-bold uppercase tracking-[.2rem]"
+            >
+              Florvin
+            </Link>
             <SocialMedia />
           </div>
         </div>
         {/* {children} */}
-        <div className="overflow-auto flex-1 flex flex-col">{children}</div>
+        <div className="overflow-auto flex-1 flex flex-col">
+          <NextTopLoader color="#16a34a" showSpinner={false} />
+          <Toaster />
+          {children}
+        </div>
 
         <div className="sticky max-lg:bottom-0 max-lg:bg-background lg:fixed lg:right-[1rem] lg:top-1/2 lg:-translate-y-1/2 mt-auto">
           <Navbar />

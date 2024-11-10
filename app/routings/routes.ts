@@ -7,6 +7,10 @@ export const MAIN_ROUTES = {
     path: "/background",
   },
 
+  CONTACT: {
+    path: "/contact",
+  },
+
   ABOUT: {
     path: "/about",
 

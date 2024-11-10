@@ -25,6 +25,8 @@ import UserIcon from "./UserIcon";
 import Prisma from "./Prisma";
 import Nextjs from "./Nextjs";
 import Sass from "./Sass";
+import ContactInfoLogo from "./ContactInfoLogo"; 
+import Copy from "./Copy";
 
 const Icons = {
   GitHubLogo,
@@ -54,6 +56,8 @@ const Icons = {
   Prisma,
   Nextjs,
   SASS: Sass,
+  ContactInfoLogo,
+  Copy,
 };
 
 export default Icons;

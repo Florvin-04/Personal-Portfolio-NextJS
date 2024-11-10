@@ -13,11 +13,11 @@ export const MAIN_NAV_LINKS = [
     label: "About Me",
     icon: <Icon.UserIcon className="w-full" />,
   },
-  // {
-  //   path: `${MAIN_ROUTES.HOME.path}`,
-  //   label: "Projects",
-  //   icon: <Icon.HomeIcon className="w-full" />,
-  // },
+  {
+    path: `${MAIN_ROUTES.CONTACT.path}`,
+    label: "Contact",
+    icon: <Icon.ContactInfoLogo className="w-full" />,
+  },
   // {
   //   path: `${MAIN_ROUTES.HOME.path}`,
   //   label: "Skills",
