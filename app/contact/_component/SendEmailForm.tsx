@@ -7,6 +7,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useEffect, useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
 
+const NODE_ENV = process.env.NEXT_PUBLIC_NODE_ENV;
+
 export default function SendEmailForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [isEmailSent, setIsEmailSent] = useState(true);
@@ -36,6 +38,14 @@ export default function SendEmailForm() {
             formRef.current?.reset();
             // Set a cookie indicating successful email submission, expires in 5 hours
             document.cookie = `emailSent=true; path=/; max-age=18000`; // 5 hours (18000 seconds)
+
+            document.cookie = `emailSent=true; path=/; max-age=18000; ${
+              NODE_ENV === "production"
+                ? "SameSite=None; Secure"
+                : "SameSite=Lax"
+            }`;
+
+            setIsEmailSent(true);
           } else {
             toast.error(response.error);
           }
