@@ -1,15 +1,12 @@
 "use client";
 
 import Icons from "@/assets/icons";
-import CopyButton from "@/components/customs/CopyButton";
 import { Button } from "@/components/ui/button";
 
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { toast } from "sonner";
