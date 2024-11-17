@@ -2,6 +2,7 @@ import Avatar from "@/assets/Avatar.png";
 import CopyButton from "@/components/customs/CopyButton";
 import Image from "next/image";
 import SendEmailForm from "./_component/SendEmailForm";
+import SendEmailLinkButton from "./_component/SendEmailLinkButton";
 
 export default function Contact() {
   return (
@@ -17,7 +18,7 @@ export default function Contact() {
           <div className="">
             <div className="flex items-center gap-2">
               <p className="text-[1.5rem] font-semibold ">Email</p>
-              <CopyButton textToCopy="bayaborda.f@gmail.com" />
+              <SendEmailLinkButton />
             </div>
             <p className="text-[1.2rem] text-muted-foreground">
               bayaborda.f@gmail.com

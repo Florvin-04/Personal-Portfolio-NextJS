@@ -27,6 +27,7 @@ import Nextjs from "./Nextjs";
 import Sass from "./Sass";
 import ContactInfoLogo from "./ContactInfoLogo"; 
 import Copy from "./Copy";
+import Gmail from "./Gmail";
 
 const Icons = {
   GitHubLogo,
@@ -58,6 +59,7 @@ const Icons = {
   SASS: Sass,
   ContactInfoLogo,
   Copy,
+  Gmail,
 };
 
 export default Icons;

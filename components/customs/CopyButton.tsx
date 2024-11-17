@@ -7,6 +7,7 @@ import { toast } from "sonner";
 
 type Props = {
   textToCopy: string;
+  
 };
 
 export default function CopyButton({ textToCopy }: Props) {
